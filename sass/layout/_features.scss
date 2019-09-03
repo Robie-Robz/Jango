@@ -1,0 +1,30 @@
+.features{
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7rem;
+    padding: 5rem 8rem;
+    &__feature{
+        &--1{
+            
+        }
+        &--2{
+            
+        }
+        &--3{
+            
+        }
+        
+    }
+    &__icon{
+        color:$color-primary;
+    }
+    
+    &__paragraph{
+        color:$color-text-grey;
+        font-size: 1.8rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        line-height: 2.5rem;
+    }
+}
