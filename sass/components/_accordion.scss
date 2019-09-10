@@ -1,0 +1,32 @@
+.accordion{
+    &--why-jango{
+        grid-column: 7/-1;
+        grid-row: 1/-1;
+    }
+    &__list{
+        list-style: none;
+    }
+    &__item{
+        background-color: $color-primary;
+    }
+    &__checkbox{
+       
+    }
+    &__label{
+        font-size: 1.9rem;
+        
+        color: $color-text-primary;
+        background-color: $color-bg-white;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: block;
+        &:hover{
+            background-color: $color-primary;
+            cursor: pointer;
+        }
+    }
+    &__paragraph{
+        
+        
+    }
+}

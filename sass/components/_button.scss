@@ -1,0 +1,27 @@
+.button{
+        
+        text-transform: uppercase;
+        color: $color-text-white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        
+        background-color: $color-primary;
+        border: none;
+        &:hover{
+            cursor: pointer;
+        }
+    
+    &--hero{
+        padding: 1.2rem 1.5rem;
+        position: absolute;
+        bottom:15%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    &--why-jango{
+        grid-row: 6/7;
+        grid-column: 1/2;
+        padding: 1rem 2rem;
+    }
+        
+}

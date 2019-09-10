@@ -3,7 +3,7 @@
     grid-template-rows: min-content;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 7rem;
-    padding: 5rem 8rem;
+    padding: 5rem 10rem;
     &__feature{
         &--1{
             
@@ -23,7 +23,7 @@
     &__paragraph{
         color:$color-text-grey;
         font-size: 1.8rem;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
         font-weight: 300;
         line-height: 2.5rem;
     }

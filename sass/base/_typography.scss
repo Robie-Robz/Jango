@@ -17,4 +17,8 @@ a:focus{
     &--features{
         margin: 3rem 0;
     }
+    &--why-jango{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
 }

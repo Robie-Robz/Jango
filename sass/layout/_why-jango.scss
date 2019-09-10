@@ -1,0 +1,22 @@
+.why-jango{
+    display: grid;
+    grid-template-rows: repeat(6, min-content);
+    grid-template-columns: repeat(11,1fr);
+    padding: 10rem;
+    background-color: $color-bg-grey;
+    &__description{
+        grid-column: 1/4;
+        grid-row: 3/6;
+        font-size: 1.7rem;
+        background-color: $color-bg-white;
+        z-index: 2;
+        width:82.5%;
+    }
+    &__image{
+        display: block;
+        grid-column: 3/6;
+        grid-row: 1/-1;
+        height:30rem;
+        z-index: 1;
+    }
+}
