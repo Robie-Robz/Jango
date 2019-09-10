@@ -1,32 +1,35 @@
 .accordion{
+
     &--why-jango{
-        grid-column: 7/-1;
         grid-row: 1/-1;
+        grid-column: 3/4;
     }
     &__list{
         list-style: none;
     }
     &__item{
         background-color: $color-primary;
+        margin-bottom: 1rem;
     }
     &__checkbox{
-       
+       display: none;
     }
     &__label{
         font-size: 1.9rem;
-        
+        padding: 2rem;
         color: $color-text-primary;
         background-color: $color-bg-white;
         text-transform: uppercase;
         font-weight: 700;
         display: block;
         &:hover{
+            color: $color-text-white;
             background-color: $color-primary;
             cursor: pointer;
         }
     }
     &__paragraph{
-        
-        
+        font-size: 1.8rem;
+        padding: 0 2rem 2rem;    
     }
 }

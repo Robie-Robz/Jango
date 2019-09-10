@@ -21,7 +21,8 @@ a, a:visited {
     margin: 3rem 0; }
   .heading-secondary--why-jango {
     grid-row: 1/2;
-    grid-column: 1/2; }
+    grid-column: 1/2;
+    align-self: center; }
 
 .container {
   display: grid;
@@ -114,44 +115,55 @@ a, a:visited {
 
 .why-jango {
   display: grid;
-  grid-template-rows: repeat(6, min-content);
-  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: min-content 5rem 1fr min-content;
+  grid-template-columns: min-content 1fr 1fr;
+  grid-column-gap: 8rem;
   padding: 10rem;
   background-color: #f7f7f7; }
   .why-jango__description {
-    grid-column: 1/4;
-    grid-row: 3/6;
+    grid-row: 3/4;
+    grid-column: 1/3;
+    width: 45%;
     font-size: 1.7rem;
     background-color: #ffffff;
-    z-index: 2;
-    width: 82.5%; }
+    z-index: 2; }
   .why-jango__image {
     display: block;
-    grid-column: 3/6;
+    max-width: 42rem;
     grid-row: 1/-1;
-    height: 30rem;
+    grid-column: 2/3;
     z-index: 1; }
 
 .accordion--why-jango {
-  grid-column: 7/-1;
-  grid-row: 1/-1; }
+  grid-row: 1/-1;
+  grid-column: 3/4; }
 
 .accordion__list {
   list-style: none; }
 
 .accordion__item {
-  background-color: #32c5d2; }
+  background-color: #32c5d2;
+  margin-bottom: 1rem; }
+
+.accordion__checkbox {
+  display: none; }
 
 .accordion__label {
   font-size: 1.9rem;
+  padding: 2rem;
   color: #3f444a;
   background-color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
   display: block; }
   .accordion__label:hover {
+    color: #ffffff;
     background-color: #32c5d2;
     cursor: pointer; }
+
+.accordion__paragraph {
+  font-size: 1.8rem;
+  padding: 0 2rem 2rem; }
 
 .button {
   text-transform: uppercase;
@@ -169,10 +181,14 @@ a, a:visited {
     left: 50%;
     transform: translate(-50%, -50%); }
   .button--why-jango {
-    grid-row: 6/7;
-    grid-column: 1/2;
-    padding: 1rem 2rem; }
+    padding: 1rem 2rem;
+    align-self: end; }
 
-.blue-line--why-jango {
-  grid-row: 2/3;
-  grid-column: 1/2; }
+.blue-line {
+  height: .3rem;
+  width: 3rem;
+  background-color: #32c5d2; }
+  .blue-line--why-jango {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    align-self: center; }
