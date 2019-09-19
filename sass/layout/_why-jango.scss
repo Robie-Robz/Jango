@@ -1,6 +1,6 @@
 .why-jango{
     display: grid;
-    grid-template-rows: min-content 5rem 1fr min-content;
+    grid-template-rows: min-content 4rem min-content min-content;
     grid-template-columns: min-content 1fr 1fr;
     grid-column-gap: 8rem;
     padding: 10rem;
@@ -10,15 +10,14 @@
         grid-row: 3/4;
         grid-column: 1/3;
         width: 45%;
-        font-size: 1.7rem;
         background-color: $color-bg-white;
         z-index: 2;
-    
+        padding: 2rem;
 
     }
     &__image{
         display: block;
-        max-width: 42rem;
+        max-height: 37rem;
         grid-row: 1/-1;
         grid-column: 2/3;
         z-index: 1;

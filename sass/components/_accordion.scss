@@ -3,6 +3,7 @@
     &--why-jango{
         grid-row: 1/-1;
         grid-column: 3/4;
+        max-height: 37rem;
     }
     &__list{
         list-style: none;
@@ -27,9 +28,30 @@
             background-color: $color-primary;
             cursor: pointer;
         }
+        
     }
+    
     &__paragraph{
+        max-height: 14rem;
         font-size: 1.8rem;
-        padding: 0 2rem 2rem;    
+        padding: 0 2rem;
+        height: 0;
+        line-height: 0;
+        overflow: hidden;
+        transition: all 0.5s;  
+        color: transparent;
+    }
+    
+     &__checkbox:checked ~ &__paragraph{
+        
+        height:100%;
+        padding: 2rem;
+        line-height: 1;
+        color: black;
+        overflow-y:auto;
+    }
+    
+    &__checkbox:checked ~ &__checkbox{
+        
     }
 }
