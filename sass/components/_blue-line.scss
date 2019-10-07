@@ -2,9 +2,15 @@
     height: .3rem;
     width: 3rem;
     background-color: $color-primary;
+    
     &--why-jango{
         grid-row: 2/3;
         grid-column: 1/2;
         align-self: center;
+    }
+    &--services{
+        grid-row: 2/3;
+        justify-self: center;
+        margin-top: 2rem;
     }
 }

@@ -10,6 +10,12 @@ a, a:visited{
 a:focus{
     
 }
+::-moz-selection{
+    background: $color-primary;
+}
+::selection{
+    background: $color-primary;
+}
 .heading-secondary{
     font-size: 3rem;
     text-transform: uppercase;
@@ -22,7 +28,11 @@ a:focus{
         grid-column: 1/2;
         align-self: center;
     }
+    &--services{
+        text-align: center;
+    }
 }
+
 .paragraph{
         color:$color-text-grey;
         font-size: 1.8rem;
@@ -33,7 +43,10 @@ a:focus{
         
     }
     &--why-jango{
-       
+       grid-row: 1/2;
+        
+    }
+    &--services{
         
     }
 }
